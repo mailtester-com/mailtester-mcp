@@ -3,7 +3,7 @@
   "name": "com.mailtester/email-verification",
   "title": "MailTester Email Verification",
   "description": "Verify emails (valid/invalid/risky/unknown): MX, SMTP, catch-all, disposable. Free agent key.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://app.mailtester.com/agent-gateway",
   "remotes": [
     {
@@ -18,5 +18,9 @@
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/mailtester-com/mailtester-mcp",
+    "source": "github"
+  }
 }
