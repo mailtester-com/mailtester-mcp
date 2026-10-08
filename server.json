@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mailtester/email-verification",
+  "title": "MailTester Email Verification",
+  "description": "Verify emails (valid/invalid/risky/unknown): MX, SMTP, catch-all, disposable. Free agent key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://app.mailtester.com/agent-gateway",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.mailtester.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <api_key>. Get a free key (25 verifications/day) with the get_api_key tool or POST https://app.mailtester.com/agent-gateway/register",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
